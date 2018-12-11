@@ -27,5 +27,6 @@ public class HibernateTest5 {
 		session.save(user);
 		transaction.commit();
 		session.close();
+		System.out.println(user.getAddress());
 	}
 }
