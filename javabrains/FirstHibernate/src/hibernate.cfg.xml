@@ -53,6 +53,7 @@
 
         <!-- Names the annotated entity class -->
         <mapping class="site.tejap.dto.UserDetails"/>
+        <mapping class="site.tejap.dto.UserDetails2"/>
 
     </session-factory>
 
