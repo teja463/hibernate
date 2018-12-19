@@ -55,7 +55,15 @@
         <mapping class="site.tejap.dto.UserDetails"/>
         <mapping class="site.tejap.dto.UserDetails2"/>
         <mapping class="site.tejap.dto.UserDetails3"/>
+		
+		<!-- OneToOne Mappings -->
+		<mapping class="site.tejap.dto.UserDetails4"/>
+		<mapping class="site.tejap.dto.Vehicle"/>
 
+	<!-- OneToMany Mappings -->
+		<mapping class="site.tejap.dto.UserDetails5"/>
+		<mapping class="site.tejap.dto.Vehicle2"/>
+		
     </session-factory>
 
 </hibernate-configuration>
