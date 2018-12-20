@@ -64,6 +64,11 @@
 		<mapping class="site.tejap.dto.UserDetails5"/>
 		<mapping class="site.tejap.dto.Vehicle2"/>
 		
+		<mapping class="site.tejap.dto.Employee"/>
+		<mapping class="site.tejap.dto.Offer"/>
+		
+		<!-- <mapping class="site.tejap.dto.Teacher"/>
+		<mapping class="site.tejap.dto.Student"/> -->
     </session-factory>
 
 </hibernate-configuration>
