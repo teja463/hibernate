@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -12,13 +13,14 @@ import javax.persistence.Table;
 public class Vehicle2 {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="VEHICLE_ID")
+	@GeneratedValue
 	private int vehicleId;
 	
-	@Column(name="VEHICLE_NAME")
 	private String vehicleName;
 
+	@ManyToOne
+	private UserDetails5 user;
+	
 	public int getVehicleId() {
 		return vehicleId;
 	}
@@ -33,6 +35,14 @@ public class Vehicle2 {
 
 	public void setVehicleName(String vehicleName) {
 		this.vehicleName = vehicleName;
+	}
+
+	public UserDetails5 getUser() {
+		return user;
+	}
+
+	public void setUser(UserDetails5 user) {
+		this.user = user;
 	}
 	
 }
