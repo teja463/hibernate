@@ -75,6 +75,11 @@
 		<!-- Cascading demo -->
 		<mapping class="site.tejap.dto.UserDetails7"/>
 		<mapping class="site.tejap.dto.Vehicle4"/>
+		
+		<!-- Inheritance demo -->
+		<mapping class="site.tejap.dto.Vehicle5"/>
+		<mapping class="site.tejap.dto.Car"/>
+		<mapping class="site.tejap.dto.Bike"/>
     </session-factory>
 
 </hibernate-configuration>

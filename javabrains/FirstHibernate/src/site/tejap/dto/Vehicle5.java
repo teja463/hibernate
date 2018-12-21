@@ -1,17 +1,23 @@
 package site.tejap.dto;
 
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 
 @Entity
-@Table(name="VEHICLE4")
-public class Vehicle4 {
+//@DiscriminatorColumn(name="VEHICLE_TYPE", discriminatorType=DiscriminatorType.STRING)
+//@Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)
+@Inheritance(strategy=InheritanceType.JOINED)
+public class Vehicle5 {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy=GenerationType.TABLE)
 	@Column(name="VEHICLE_ID")
 	private int id;
 	
