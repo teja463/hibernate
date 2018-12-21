@@ -71,7 +71,10 @@
 		<!-- ManyToMany mappings -->
 		<mapping class="site.tejap.dto.UserDetails6"/>
 		<mapping class="site.tejap.dto.Vehicle3"/>
-		
+
+		<!-- Cascading demo -->
+		<mapping class="site.tejap.dto.UserDetails7"/>
+		<mapping class="site.tejap.dto.Vehicle4"/>
     </session-factory>
 
 </hibernate-configuration>
