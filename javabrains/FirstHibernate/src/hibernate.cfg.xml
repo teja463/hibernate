@@ -80,6 +80,11 @@
 		<mapping class="site.tejap.dto.Vehicle5"/>
 		<mapping class="site.tejap.dto.Car"/>
 		<mapping class="site.tejap.dto.Bike"/>
+		
+		<!-- HQL Demo -->
+		<mapping class="site.tejap.dto.UserDetails8"/>
     </session-factory>
 
 </hibernate-configuration>
+
+
